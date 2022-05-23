@@ -42,5 +42,73 @@
   </div>
 </template>
 
+<!--تغییرات استایل ماشین حساب-->
 <style>
+#calculator {
+  text-align: center;
+  margin: auto
+}
+#show {
+padding: 5px;
+font-weight: bold;
+text-align: right
+}
+#equal {
+  color: white;
+  background-color: black ;
+  border: 2px solid black;
+  width: calc(100%);
+  padding: 11.5px 0;
+}
+#digit{
+  font: message-box;
+  color: black;
+  background-color:#DFFF00;
+  border: 2px solid rgb(0, 0, 0);
+  width: calc(100%);
+  padding: 10px;
+}
+#sum {
+  color: white;
+  background-color: black ;
+  border: 2px solid black;
+  width: calc(100%);
+  height: calc(88px);
+  padding: 11.5px
+}
+#minus {
+  color: white;
+  background-color: black ;
+  border: 2px solid black;
+  width: calc(100%);
+  padding: 11.5px
+}
+#mul {
+  color: white;
+  background-color: black ;
+  border: 2px solid black;
+  width: calc(100%);
+  padding: 11.5px
+}
+#clear {
+  color: white;
+  background-color: black ;
+  border: 2px solid black;
+  width: calc(100%);
+  padding: 11.5px
+}
+#div {
+  color: white;
+  background-color: black ;
+  border: 2px solid black;
+  width: calc(100%);
+  padding: 11.5px
+}
+#mod {
+  color: white;
+  background-color: black ;
+  border: 2px solid black;
+  width: calc(100%);
+  padding: 11.5px
+}
 </style>

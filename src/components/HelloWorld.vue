@@ -1,4 +1,73 @@
 <script>
+export default {
+   data() {
+    return {
+      screen: "",
+      value1: Number,
+      value2: Number,
+      Mt: "",
+    };
+  },
+  methods: {  // ‌تعریف عملگر‌های ریاضی 
+    digit(n) {
+      this.screen += n;
+    },
+    sum() {
+      this.value1 = parseInt(this.screen, 10);
+      this.Mt = "+";
+      this.screen = "";
+    },
+    mul() {
+      this.value1 = parseInt(this.screen, 10);
+      this.Mt = "*";
+      this.screen = "";
+    },
+    minus() {
+      this.value1 = parseInt(this.screen, 10);
+      this.Mt = "-";
+      this.screen = "";
+    },
+    mod() {
+      this.value1 = parseInt(this.screen, 10);
+      this.Mt = "%";
+      this.screen = "";
+    },
+    clear() {
+      this.screen = "";
+    },
+    div() {
+      this.value1 = parseInt(this.screen, 10);
+      this.Mt = "/";
+      this.screen = "";
+    },
+    equal() {
+      switch (this.Mt) {
+        case "+":
+          this.value2 = parseInt(this.screen, 10);
+          this.screen = this.value2 + this.value1;
+          break;
+        case "-":
+          this.value2 = parseInt(this.screen, 10);
+          this.screen = this.value1 - this.value2;
+          break;
+        case "*":
+          this.value2 = parseInt(this.screen, 10);
+          this.screen = this.value1 * this.value2;
+          break;
+        case "%":
+          this.value2 = parseInt(this.screen, 10);
+          this.screen = this.value1 % this.value2;
+          break;
+        case "/":
+          this.value2 = parseInt(this.screen, 10);
+          this.screen = this.value1 / this.value2;
+          break;
+        default:
+          break;
+      }
+    },
+  }
+};
 </script>
 
 <template>

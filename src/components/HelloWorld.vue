@@ -12,8 +12,8 @@
       
       </tr>
       <tr>
-        <td><button @click="mod" id="mod">%</button></td>   <!--دکمه‌ی درصد-->
         <td colspan="2"><button @click="clear" id="clear">C</button></td>    <!--دکمه‌ی پاک کردن صفحه نمایش-->
+        <td><button @click="mod" id="mod">%</button></td>   <!--دکمه‌ی درصد-->
         <td><button @click="mul" id="mul">*</button></td>   <!--دکمه‌ی ضربدر-->
       </tr>
       <tr>
